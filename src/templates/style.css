@@ -1,0 +1,422 @@
+/* ==== ESTILOS GENERALES ==== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* ==== CONTENEDOR PRINCIPAL ==== */
+.container {
+    display: flex;
+}
+
+/* ==== SIDEBAR / MENÚ LATERAL ==== */
+.sidebar {
+    width: 220px;
+    background-color: #2c3e50;
+    height: 100vh;
+    padding-top: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1a252f;
+}
+
+.sidebar button:hover {
+    background-color: #c0392b;
+}
+
+/* ==== CONTENIDO PRINCIPAL ==== */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+}
+
+/* ==== ENCABEZADO ==== */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 16px;
+}
+
+/* ==== FORMULARIOS GENERALES ==== */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #1a252f;
+}
+
+/* ==== TABLAS ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ==== BOTONES EN TABLAS ==== */
+.btn {
+    padding: 6px 12px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: #2980b9;
+}
+
+.btn-eliminar {
+    background-color: #c0392b;
+}
+
+.btn-ver {
+    background-color: #27ae60;
+}
+
+/* ==== BOTÓN MORADO DE GENERAR PDF ==== */
+.acciones-superiores .btn-pdf {
+    background-color: #9b59b6; /* Morado */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.acciones-superiores .btn-pdf:hover {
+    background-color: #8e44ad; /* Morado más intenso al pasar el mouse */
+}
+
+
+/* ==== BOTÓN VERDE DE AGREGAR ==== */
+.acciones-superiores .btn-agregar {
+    background-color: #2ecc71; /* Verde esmeralda */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.acciones-superiores .btn-agregar:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el mouse */
+}
+
+
+/* ==== MENSAJES / ALERTAS ==== */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.alert-error {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* ==== RESPONSIVE ==== */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* ==== LOGIN FORM ==== */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #2980b9;
+}
+
+.login-container .error-msg {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-container .register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container .register-link a {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.login-container .register-link a:hover {
+    text-decoration: underline;
+}
+
+/* ==== FORMULARIO DE NUEVA PERSONA ==== */
+.persona-container {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.persona-container h2 {
+    margin-bottom: 20px;
+    color: #e67e22;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.persona-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.persona-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.persona-container button {
+    width: 100%;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.persona-container button:hover {
+    background-color: #d35400;
+}
+
+.mensaje {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ==== FORMULARIO DE NUEVO USUARIO ==== */
+.register-container {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #9b59b6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.register-container input,
+.register-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.register-container button {
+    width: 100%;
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: #8e44ad;
+}
+
+/* ===== AYUDA O ENLACES DE FORMULARIOS ===== */
+.register-container .form-helper {
+    font-size: 13px;
+    color: #555;
+    margin-top: -5px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.register-container .form-helper a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-container .form-helper a:hover {
+    text-decoration: underline;
+}
+
+/* ==== ESTADÍSTICAS / GRÁFICO DE PROVEEDORES ==== */
+.grafico-container {
+    width: 400px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-container h2 {
+    text-align: center;
+    color: #2c3e50;
+}
